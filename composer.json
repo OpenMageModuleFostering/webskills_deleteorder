@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/webskills_deleteorder",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Delete Magento Orders.",
+    "authors": [
+    {
+        "name": "Rohit Dhiman",
+        "email": "rohitdoll@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Webskills_Deleteorder>
+      <version>0.1.0</version>
+    </Webskills_Deleteorder>
+  </modules>
+  <global>
+    <helpers>
+      <deleteorder>
+        <class>Webskills_Deleteorder_Helper</class>
+      </deleteorder>
+    </helpers>
+	<blocks>
+	  <deleteorder>
+		<class>Webskills_Deleteorder_Block</class>
+	  </deleteorder>
+			<adminhtml>
+				<rewrite>
+					<sales_order_grid>Webskills_Deleteorder_Block_Adminhtml_Sales_Order_Grid</sales_order_grid>
+				</rewrite>
+			</adminhtml>
+	</blocks>
+  </global>
+  <admin>
+	<routers>
+	  <deleteorder>
+	    <use>admin</use>
+		<args>
+		  <module>Webskills_Deleteorder</module>
+		  <frontName>deleteorder</frontName>
+		</args>
+	  </deleteorder>
+	</routers>
+  </admin>
+  <adminhtml>
+		<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<deleteorder translate="title" module="deleteorder">
+			  <title>Deleteorder</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		  <deleteorderbackend translate="title">
+			<title>Backend Page Title</title>
+		  </deleteorderbackend>
+			  </children>
+			</deleteorder>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<layout>
+	  <updates>
+		<deleteorder>
+		  <file>deleteorder.xml</file>
+		</deleteorder>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 
