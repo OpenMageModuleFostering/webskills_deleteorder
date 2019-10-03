@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/webskills_deleteorder",
+    "name": "openmage-module-fostering\/webskills_deleteorder",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Delete Magento Orders.",
     "authors": [
